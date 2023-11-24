@@ -1,17 +1,20 @@
 <template>
+  <div class="flex w-full justify-center pb-4">
+    <img src="/src/assets/Rijkswaterstaat-logo.png" class="h-24 pl-44 justify-center">
+  </div>
   <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 bg-blue-400 mb-3">
     <div class="container px-2 mx-2 flex flex-wrap items-center justify-between">
       <div class="w-full relative flex justify-between lg:w-auto px-2 lg:static lg:block lg:justify-start ">
         <div class="hidden lg:flex ">
-          <router-link to="/" class="btn-navbar" active-class="bg-opacity-30 bg-gray-500">LIT</router-link>
-          <router-link to="/about" class="btn-navbar" active-class="bg-opacity-30 bg-gray-500">About</router-link>
+          <router-link to="/" class="btn-navbar" active-class="bg-opacity-30 bg-gray-500">Overzicht</router-link>
+          <router-link to="/about" class="btn-navbar" active-class="bg-opacity-30 bg-gray-500">Extra functie?</router-link>
         </div>
         <button class="btn-navbar lg:hidden" type="button"
                        v-on:click="toggleNavbar()">
           <span class="uppercase">Kaas</span>   <!-- TODO: Enter hamburgermenu icon -->
         </button>
       </div>
-      <div v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="lg:flex-grow items-center">
+      <div v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="lg:hidden items-center">
         <ul class="flex flex-col lg:flex-row list-none ml-auto">
           <li class="nav-item">
             <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#pablo">
