@@ -8,14 +8,7 @@
       <table class="border-collapse border border-slate-500 table-auto">
         <thead>
         <tr class="bg-blue-400">
-          <th class="border border-slate-600 text-slate-100 p-2">Snelweg</th>
-          <th class="border border-slate-600 text-slate-100 p-2">HM-Paal van</th>
-          <th class="border border-slate-600 text-slate-100 p-2">HM-Paal tot</th>
-          <th class="border border-slate-600 text-slate-100 p-2">Waarschuwing</th>
-          <th class="border border-slate-600 text-slate-100 p-2">Aantal dagen afwijkend</th>
-          <th class="border border-slate-600 text-slate-100 p-2">Afwijkend van</th>
-          <th class="border border-slate-600 text-slate-100 p-2">Afwijkend tot</th>
-          <th class="border border-slate-600 text-slate-100 p-2">Info</th>
+          <th class="border border-slate-600 text-slate-100 p-2" v-for="(column,i) in columns">{{ column.label }}</th>
         </tr>
         </thead>
         <tbody>
@@ -40,7 +33,7 @@ export default {
   name: "Home",
   data(){
     return {
-      colums:[
+      columns:[
         {
           label: 'Snelweg',
           field: 'snelweg'
