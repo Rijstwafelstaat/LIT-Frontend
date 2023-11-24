@@ -7,7 +7,7 @@ import NavBar from "./components/NavBar.vue";
 
 </script>
 
-<template class="w-full">
+<template class="scroll-smooth">
   <NavBar />
   <router-view />
 </template>
