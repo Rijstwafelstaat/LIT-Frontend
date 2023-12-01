@@ -12,7 +12,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr class="even:bg-slate-200 odd:bg-white" v-for="(row,i) in rows" :key="i">
+        <tr class="even:bg-slate-200 odd:bg-white" v-for="(row,i) in rows" :key="row[i]">
           <td class="border border-slate-600 text-slate-1000 p-2">{{ row.snelweg }}</td>
           <td class="border border-slate-600 text-slate-1000 p-2">{{ row.hm_paal_van }}</td>
           <td class="border border-slate-600 text-slate-1000 p-2">{{ row.hm_paal_tot }}</td>
@@ -85,12 +85,8 @@ const rows =
       {"snelweg":"FAQ","hm_paal_van":64,"hm_paal_tot":84,"waarschuwing":false,"aantal_dagen_afwijkend":46,"afwijkend_van":"30/12/2022","afwijkend_tot":"24/05/2023","info":"net"}
     ];
 
-function make_data() {
-
-};
 
 onMounted(() => {
-  make_data();
 })
 
 </script>
