@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  lit_frontend:
+    image: node:alpine
+    container_name: vite_docker
+    working_dir: /srv/app
+    volumes:
+      - type: bind
+        source: ./
+        target: /srv/app
+    ports:
+      - "8000:8000"
+    command: >
+      sh -c "npm install &&
+      npm run dev"
