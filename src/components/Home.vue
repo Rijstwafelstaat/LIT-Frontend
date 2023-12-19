@@ -2,7 +2,7 @@
   <div class="mx-4">
     <!-- TODO: Data dashboard laten zien -->
     <div class="relative flex">
-      <span class="text-xl">Overzicht afwijkingen</span>
+      <span class="text-xl">Overzicht afwijkingen Bruh</span>
     </div>
     <div class="relative my-4">
       <table class=" border-collapse border border-slate-500 table-auto">
