@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/*@layer components {*/
+/*    .btn-navbar {*/
+/*        @apply rounded-md border-2 p-5 text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white hover:bg-opacity-30 hover:bg-gray-500*/
+/*    }*/
+/*}*/
 @layer components {
     .btn-navbar {
-        @apply rounded-md border-2 p-5 text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white hover:bg-opacity-30 hover:bg-gray-500
+        @apply px-1 h-full mr-1.5 pt-3 text-3xl font-normal font-[RijksoverheidSansText] text-black hover:bg-[#44AFE4] hover:underline
     }
 }

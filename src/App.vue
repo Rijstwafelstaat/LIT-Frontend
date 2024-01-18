@@ -13,4 +13,12 @@ import NavBar from "./components/NavBar.vue";
 </template>
 
 <style>
+@font-face {
+  font-family: RijksoverheidSansHeading;
+  src: url('~@/assets/fonts/rijksoverheidsansheading-bold.ttf');
+}
+@font-face {
+  font-family: RijksoverheidSansText;
+  src: url('~@/assets/fonts/rijksoverheidsanstext-regular.ttf');
+}
 </style>
